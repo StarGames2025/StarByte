@@ -1,0 +1,65 @@
+module System; //muss immer da sein
+
+// Variablendeklarationen
+int x = 10;
+float y = 3.14;
+string name = "StarByte";
+
+// Bedingung
+if (x > 5)
+{
+    System.Console.WriteLine("x ist größer als 5");
+}
+elseif (x == 5)
+{
+    System.Console.WriteLine("x ist gleich 5");
+}
+else
+{
+    System.Console.WriteLine("x ist kleiner als 5");
+}
+
+
+// Schleife
+for (int i = 0; i < 5; i++)
+{
+    System.Console.WriteLine(i);
+}
+
+int[] numbers = {1, 2, 3, 4, 5};
+foreach (int number in numbers)
+{
+    System.Console.WriteLine(number);
+}
+
+
+// Funktion
+def int Add(int a, int b)
+{
+    return a + b;
+}
+
+int result = Add(10, 20);
+System.Console.WriteLine(result);  // Ausgabe: 30
+
+// Klasse
+public class Person
+{
+    private string name; // Standardmäßig private
+    private int age;     // Standardmäßig private
+
+    // Konstruktor
+    public Person(string name, int age)
+    {
+        this.name = name;
+        this.age = age;
+    }
+
+    public def void Greet()
+    {
+        System.Console.WriteLine("Hallo, mein Name ist " + name);
+    }
+}
+
+Person person = new Person("Max", 30);
+person.Greet();  // Ausgabe: "Hallo, mein Name ist Max"
